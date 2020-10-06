@@ -20,6 +20,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
+Route::get('/', 'PostsController@index');
 Route::post('follow/{user}', 'FollowsController@store');
 
 Route::get('/p/create', 'PostsController@create');
